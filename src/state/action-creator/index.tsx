@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const techBotURL = "https://twitter-brain-nodejs.vercel.app";
-const techBotURL = "https://localhost:9000";
+const techBotURL = "http://localhost:9000";
 const wellnessBotURL = "https://fitness-bot.vercel.app";
 
 export const addUser = (user: any) => {
@@ -36,7 +36,7 @@ export const addUsersAsync = (username: any): any => {
   return (dispatch: any, getState: any) => {
     console.log(username);
     axios
-      .post(`${techBotURL}/profile/tech/add`, { username })
+      .post(`${techBotURL}/profile/add`, { username })
       .then((response: any) => {
         if (response.data === "Profile added.") {
           dispatch(fetchUsersAsync());
@@ -71,7 +71,7 @@ export const getNextScheduleAsync = (): any => {
   return (dispatch: any, getState: any) => {
     axios
       // .get("https://fitness-bot.vercel.app/retweet/nextSchedule")
-      .get("https://localhost:9000/retweet/nextSchedule")
+      .get("http://localhost:9000/retweet/nextSchedule")
       .then((response: any) => {
         dispatch({
           type: "FETCH_NEXT_TASK",
