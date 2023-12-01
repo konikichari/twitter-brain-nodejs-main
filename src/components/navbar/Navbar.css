@@ -1,0 +1,30 @@
+.logo-text {
+  color: #405870;
+}
+.navbar-container {
+  background-color: #ffcf58 !important;
+}
+.logo-icon {
+  color: #08759f !important;
+}
+.logo-description {
+  color: #08759f !important;
+  font-size: 8px;
+  display: block;
+}
+.next-schedule {
+  position: absolute;
+  right: 125px;
+  top: 24px;
+  color: #6e6e68;
+  font-weight: bolder;
+  -webkit-font-smoothing: auto;
+}
+.time-string {
+  color: #07759f;
+  font-size: 19px;
+  text-decoration: overline;
+  text-decoration-color: #07759f;
+  text-decoration-thickness: 2px;
+  text-decoration-style: double;
+}
